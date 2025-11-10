@@ -1,26 +1,103 @@
+/* === FULL SCREEN SETUP === */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; 
+    min-height: 100vh;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* === PROFILE CARD STYLING === */
+.profile-card {
+    width: 90%;
+    max-width: 400px; 
+    text-align: center; 
+    padding: 25px 20px;
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+/* CIRCULAR IMAGE STYLE */
+.profile-pic-wrapper {
+    width: 150px;  
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 15px auto; 
+    border: 5px solid #ffffff; 
+    box-shadow: 0 0 0 1px #ccc, 0 3px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.profile-name {
+    color: #1c1e21;
+    margin: 10px 0 5px 0;
+    font-size: 1.8em;
+}
+
+.designer-role {
+    color: #606770;
+    margin: 0 0 15px 0;
+    font-size: 0.9em;
+}
+
+/* === OTHER CONTENT STYLING === */
+.divider {
+    width: 90%;
+    max-width: 500px;
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 25px 0;
+}
+
+.content-section {
+    width: 90%;
+    max-width: 600px;
     padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
 }
 
-h1 {
-    color: #2c3e50;
+.media-title {
+    color: #385898; 
+    margin-bottom: 10px;
 }
 
-h2 {
-    color: #16a085;
-    margin-top: 30px;
+.audio-player, .main-video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 6px;
 }
 
-img, video {
-    border: 3px solid #2c3e50;
-    margin-top: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
+.tap-me-button {
+    background-color: #42b72a; 
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
     cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.tap-me-button:hover {
+    background-color: #36a420;
 }
